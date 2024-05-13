@@ -21,10 +21,10 @@ let taskResult;
 
 if (number % 5 === 0 && number % 3 === 0) {
   taskResult = 'FizzBuzz'
-  } else if (number % 5 === 0) {
-    taskResult = 'Buzz'
-  } else if (number % 3 === 0) {
-    taskResult = 'Fizz'  
-    } else {
-      taskResult= number
-      }
+} else if (number % 5 === 0) {
+  taskResult = 'Buzz'
+} else if (number % 3 === 0) {
+  taskResult = 'Fizz'  
+} else {
+  taskResult= number
+}
