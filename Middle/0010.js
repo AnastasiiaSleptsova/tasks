@@ -26,17 +26,17 @@
 
 // Вариант основной
 
-let calculate=function(firstNumber, secondNumber, operator) {
-  if(operator==='+') {
-    return parseInt(firstNumber,10)+parseInt(secondNumber,10);
+let calculate = function (firstNumber, secondNumber, operator) {
+  if (operator === "+") {
+    return parseInt(firstNumber, 10) + parseInt(secondNumber, 10);
   }
-  if(operator==='-') {
-    return firstNumber-secondNumber;
+  if (operator === "-") {
+    return firstNumber - secondNumber;
   }
-  if(operator==='*') {
-    return firstNumber*secondNumber;
+  if (operator === "*") {
+    return firstNumber * secondNumber;
   }
-  if(operator==='/') {
-    return firstNumber/secondNumber;
+  if (operator === "/") {
+    return firstNumber / secondNumber;
   }
-}
+};

@@ -14,13 +14,9 @@
 
 const getDiet = (calories, limit) => {
   let quantity = 0;
-    while ( limit >= calories[quantity] ) {
-      limit -= calories[quantity];
-      quantity++;
-    }
+  while (limit >= calories[quantity]) {
+    limit -= calories[quantity];
+    quantity++;
+  }
   return quantity;
 };
-
-
-
-

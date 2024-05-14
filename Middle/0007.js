@@ -14,7 +14,15 @@
 
 */
 
-let luggage = ['пакет', 'мяч', 'тапки', 'когтеточка', 'коробка', 'миска', 'мята'];
+let luggage = [
+  "пакет",
+  "мяч",
+  "тапки",
+  "когтеточка",
+  "коробка",
+  "миска",
+  "мята",
+];
 let startIndex = 2;
 let quantity = 3;
 let chosenLuggage = [];
@@ -24,7 +32,7 @@ let chosenLuggage = [];
 // chosenLuggage = luggage.slice(startIndex, startIndex+quantity);
 
 // решение с помощью цикла
- 
+
 // for (i = 0; i < luggage.length; i++) {
 //   if (i >= startIndex && i < startIndex + quantity) {
 //     chosenLuggage.push(luggage[i]);
@@ -34,5 +42,5 @@ let chosenLuggage = [];
 // решение с помощью метода массива filter
 
 chosenLuggage = luggage.filter((element, index) => {
-  return (index >= startIndex &&  index < startIndex + quantity) 
-})
+  return index >= startIndex && index < startIndex + quantity;
+});

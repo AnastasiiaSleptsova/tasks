@@ -17,19 +17,29 @@
 
 */
 
-let books = ['Улисс', 'Маугли', 'Сияние', 
-'Ревизор', 'Гамлет', 'Обломов', 'Дюймовочка', 
-'Шантарам', 'Вий', 'Сильмариллион', 'Оно'];
+let books = [
+  "Улисс",
+  "Маугли",
+  "Сияние",
+  "Ревизор",
+  "Гамлет",
+  "Обломов",
+  "Дюймовочка",
+  "Шантарам",
+  "Вий",
+  "Сильмариллион",
+  "Оно",
+];
 let minNumber = 3;
 let maxNumber = 5;
 let filteredBooks = [];
 
-// решение с помощью цикла 
+// решение с помощью цикла
 
 // for (i = 0; i < books.length; i++) {
 //   if (books[i].length >= minNumber && books[i].length <= maxNumber) {
-//     filteredBooks.push(books[i]) 
-//   } 
+//     filteredBooks.push(books[i])
+//   }
 // }
 
 // решение с помощью метода массива forEach
@@ -44,6 +54,8 @@ let filteredBooks = [];
 //   return (item.length >= minNumber && item.length <= maxNumber) ? filteredBooks.push(item) : '';
 // })
 
-// решение с помощью метода массива filter 
- 
-filteredBooks = books.filter(item => item.length >= minNumber && item.length <= maxNumber) 
+// решение с помощью метода массива filter
+
+filteredBooks = books.filter(
+  (item) => item.length >= minNumber && item.length <= maxNumber,
+);

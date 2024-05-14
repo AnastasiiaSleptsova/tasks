@@ -26,9 +26,8 @@ if (price >= 1000 && price < 3000) {
   discountedPrice = price * 0.95;
 } else if (price >= 3000 && price < 5000) {
   discountedPrice = price * 0.9;
-} else if (price >= 5000 ) {
+} else if (price >= 5000) {
   discountedPrice = price * 0.85;
 } else {
   discountedPrice = price * 1;
-  }
-  
+}

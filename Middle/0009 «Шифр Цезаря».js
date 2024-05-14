@@ -15,25 +15,92 @@
 */
 
 // Алфавит
-let symbols = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 
-'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 
-'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 
-'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', 'а', 'б', 'в', 'г', 
-'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 
-'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 
-'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я', ' ', 
-'.', ',', '—', '!'];
+let symbols = [
+  "А",
+  "Б",
+  "В",
+  "Г",
+  "Д",
+  "Е",
+  "Ё",
+  "Ж",
+  "З",
+  "И",
+  "Й",
+  "К",
+  "Л",
+  "М",
+  "Н",
+  "О",
+  "П",
+  "Р",
+  "С",
+  "Т",
+  "У",
+  "Ф",
+  "Х",
+  "Ц",
+  "Ч",
+  "Ш",
+  "Щ",
+  "Ъ",
+  "Ы",
+  "Ь",
+  "Э",
+  "Ю",
+  "Я",
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я",
+  " ",
+  ".",
+  ",",
+  "—",
+  "!",
+];
 
 // Смещение
 let shift = 10;
 
 // Закодированное сообщение
-let encodedSymbols = [62,28,31,56,42,40,43,27,23,
-    56,37,28,56,25,51,39,40,38,41,32,48,52,56,40,
-    51,24,34,43,56,43,56,45,38,31,55,32,37,23,57];
+let encodedSymbols = [
+  62, 28, 31, 56, 42, 40, 43, 27, 23, 56, 37, 28, 56, 25, 51, 39, 40, 38, 41,
+  32, 48, 52, 56, 40, 51, 24, 34, 43, 56, 43, 56, 45, 38, 31, 55, 32, 37, 23,
+  57,
+];
 
 // Раскодированное сообщение
-let decodedMessage = '';
+let decodedMessage = "";
 
 // Решение с помощью цикла №1
 
@@ -42,7 +109,7 @@ let decodedMessage = '';
 //     if (encodedSymbols[i] + shift === j && encodedSymbols[i] + shift < symbols.length) {
 //       decodedMessage += symbols[j]
 //     } else if (encodedSymbols[i] + shift === j && encodedSymbols[i] + shift >= symbols.length) {
-//       decodedMessage += symbols[j] - symbols.length 
+//       decodedMessage += symbols[j] - symbols.length
 //     }
 //   }
 // }
@@ -51,5 +118,6 @@ let decodedMessage = '';
 
 for (let j = 0; j < encodedSymbols.length; j++) {
   let index = encodedSymbols[j] + shift;
-  encodedSymbols += symbols[index > symbols.length ? index - symbols.length : index]; 
+  encodedSymbols +=
+    symbols[index > symbols.length ? index - symbols.length : index];
 }

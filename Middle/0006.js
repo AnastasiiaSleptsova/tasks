@@ -14,17 +14,16 @@
 let numbers = [2, 4, 7, 4, 7, 2];
 let number = 7;
 
-// решение с помощью методов 
+// решение с помощью методов
 
 // let lastIndex = numbers.lastIndexOf(number);
 
-
 // решение с помощью цикла
 
-let lastIndex = -1
+let lastIndex = -1;
 
 for (i = 0; i < numbers.length; i++) {
   if (numbers[i] === number) {
-    lastIndex = i
+    lastIndex = i;
   }
 }

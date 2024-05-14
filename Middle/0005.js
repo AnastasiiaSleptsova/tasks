@@ -11,7 +11,7 @@
 let number = 123;
 let quantity = 0;
 
-// решение с помощью методов 
+// решение с помощью методов
 
 // let string = number.toString();
 // let array = string.split('');
@@ -20,5 +20,5 @@ let quantity = 0;
 // решение с помощью цикла
 
 for (let i = 1; number / i >= 1; i *= 10) {
-  quantity ++;
+  quantity++;
 }

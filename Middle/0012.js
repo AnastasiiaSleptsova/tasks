@@ -16,10 +16,10 @@
 
 const getDocumentsNumbers = (arr, year) => {
   let counter = 0;
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].indexOf(year, 4) !== -1) {
-        counter++;
-      }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].indexOf(year, 4) !== -1) {
+      counter++;
     }
+  }
   return counter;
 };
