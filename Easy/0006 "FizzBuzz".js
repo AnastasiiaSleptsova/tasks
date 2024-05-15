@@ -20,11 +20,11 @@ let number = 30;
 let taskResult;
 
 if (number % 5 === 0 && number % 3 === 0) {
-  taskResult = 'FizzBuzz'
-  } else if (number % 5 === 0) {
-    taskResult = 'Buzz'
-  } else if (number % 3 === 0) {
-    taskResult = 'Fizz'  
-    } else {
-      taskResult= number
-      }
+  taskResult = "FizzBuzz";
+} else if (number % 5 === 0) {
+  taskResult = "Buzz";
+} else if (number % 3 === 0) {
+  taskResult = "Fizz";
+} else {
+  taskResult = number;
+}

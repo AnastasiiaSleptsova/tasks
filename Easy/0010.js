@@ -10,10 +10,10 @@
 
 let number = 15;
 
-for (i=0; i<= number; i++) {
-  if (number%i === 0) {
+for (i = 0; i <= number; i++) {
+  if (number % i === 0) {
     if (i !== 1 && i !== number) {
-      console.log(i)
+      console.log(i);
     }
   }
 }

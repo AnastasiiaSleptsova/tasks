@@ -19,12 +19,15 @@
 let age = 0.7;
 let ageGroup;
 
-if (age <=1) {
-   ageGroup = 'Котята'
-} if (age <=3 && age >1) {
-   ageGroup = 'Молодые коты'
-} if (age <=7 && age >3) {
-   ageGroup = 'Коты средних лет' 
-} if (age > 7) {
-   ageGroup = 'Почтенные коты' 
+if (age <= 1) {
+  ageGroup = "Котята";
+}
+if (age <= 3 && age > 1) {
+  ageGroup = "Молодые коты";
+}
+if (age <= 7 && age > 3) {
+  ageGroup = "Коты средних лет";
+}
+if (age > 7) {
+  ageGroup = "Почтенные коты";
 }

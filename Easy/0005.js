@@ -18,9 +18,11 @@ let weight = 5;
 let recommendation;
 
 if (weight < 4) {
-  recommendation = 'Пора перекусить'
-  } if (weight >= 4 && weight <= 5.5){ 
-  recommendation = 'Вес в норме'
-  } if (weight > 5.5) {
-  recommendation = 'Пора на тренировку'    
-  }
+  recommendation = "Пора перекусить";
+}
+if (weight >= 4 && weight <= 5.5) {
+  recommendation = "Вес в норме";
+}
+if (weight > 5.5) {
+  recommendation = "Пора на тренировку";
+}

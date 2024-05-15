@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "prettier": "^3.2.5"
+  },
+  "scripts": {
+    "prettier": "prettier . --write",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
