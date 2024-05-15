@@ -12,6 +12,6 @@
 let lastNumber = 10;
 let sum = 0;
 
-for (i=0; i<=lastNumber; i++) {
-  sum += i
+for (i = 0; i <= lastNumber; i++) {
+  sum += i;
 }

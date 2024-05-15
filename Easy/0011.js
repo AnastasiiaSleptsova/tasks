@@ -22,10 +22,9 @@ chosenGreen (выбранная зелень).
 
 */
 
-
-let liquids = ['вода', 'молоко', 'сок', 'чай', 'йогурт'];
-let fruits = ['киви', 'банан', 'персик', 'манго', 'груша', 'ананас'];
-let greens = ['мята', 'шпинат', 'руккола', 'петрушка', 'базилик'];
+let liquids = ["вода", "молоко", "сок", "чай", "йогурт"];
+let fruits = ["киви", "банан", "персик", "манго", "груша", "ананас"];
+let greens = ["мята", "шпинат", "руккола", "петрушка", "базилик"];
 
 // Выбор посетителя
 
@@ -35,4 +34,10 @@ let chosenGreen = 2;
 
 // Заказ
 
-let order = 'Основа — ' + liquids[chosenLiquid - 1] + ', фрукт — ' +  fruits[chosenFruit - 1] + ', зелень — ' +  greens[chosenGreen-1] ;
+let order =
+  "Основа — " +
+  liquids[chosenLiquid - 1] +
+  ", фрукт — " +
+  fruits[chosenFruit - 1] +
+  ", зелень — " +
+  greens[chosenGreen - 1];

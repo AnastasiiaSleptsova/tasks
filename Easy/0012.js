@@ -17,10 +17,10 @@
 
 */
 
-let groceries = ['чай', 'шпроты', 'печенье', 'сахар', 'чипсы'];
-let shoppingList = '';
+let groceries = ["чай", "шпроты", "печенье", "сахар", "чипсы"];
+let shoppingList = "";
 
-// решение с помощью цикла 
+// решение с помощью цикла
 
 // shoppingList = groceries.join(', ');
 
@@ -32,8 +32,8 @@ let shoppingList = '';
 //   }
 // }
 
-// решение с помощью метода reduce  
+// решение с помощью метода reduce
 
-shoppingList = groceries.reduce((acc, item ) => {
-  return acc + ', ' + item ;
-  });
+shoppingList = groceries.reduce((acc, item) => {
+  return acc + ", " + item;
+});

@@ -17,10 +17,10 @@ let multiplier = 4;
 let quantity = 7;
 
 for (var i = 1; i <= quantity; i++) {
-if (i === 1) {
-console.log(startNumber);
-} else {
-startNumber *= multiplier;
-console.log (startNumber);
-}
+  if (i === 1) {
+    console.log(startNumber);
+  } else {
+    startNumber *= multiplier;
+    console.log(startNumber);
+  }
 }

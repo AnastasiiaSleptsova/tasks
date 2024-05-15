@@ -26,32 +26,32 @@
 */
 
 let getPrice = function (time, urgency) {
-    let fixedRate = 1500;
-    
-    if (urgency) {
-      time /= 2;
-      fixedRate *= 2.5;
-      }
-    
-    if (time > 150) {
-      fixedRate -= 250;
-      }
-      return time * fixedRate;
-    };
-  
-  const getProfitableProject = function (hours, profit) {
-    const urgentProject = getPrice(hours, true) - profit;
-    const notUrgentProject = getPrice(hours, false);
-    let value;
-    let expences;
-    
-    if (urgentProject < notUrgentProject) {
-      value = 'срочный';
-      expences = urgentProject;
-      } else {
-      value = 'обычный';
-      expences = notUrgentProject;
-      }
-      
-      return 'Выгодней ' + value + ' проект. Потратишь на него '+ expences;
-    };
+  let fixedRate = 1500;
+
+  if (urgency) {
+    time /= 2;
+    fixedRate *= 2.5;
+  }
+
+  if (time > 150) {
+    fixedRate -= 250;
+  }
+  return time * fixedRate;
+};
+
+const getProfitableProject = function (hours, profit) {
+  const urgentProject = getPrice(hours, true) - profit;
+  const notUrgentProject = getPrice(hours, false);
+  let value;
+  let expences;
+
+  if (urgentProject < notUrgentProject) {
+    value = "срочный";
+    expences = urgentProject;
+  } else {
+    value = "обычный";
+    expences = notUrgentProject;
+  }
+
+  return "Выгодней " + value + " проект. Потратишь на него " + expences;
+};

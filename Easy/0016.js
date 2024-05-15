@@ -14,15 +14,13 @@
 */
 
 let daysOfWeek = {
-    'понедельник': 'monday',
-    'вторник': 'tuesday',
-    'среда': 'wednesday',
-    'четверг': 'thursday',
-    'пятница': 'friday',
-    'суббота': 'saturday',
-    'воскресенье': 'sunday'
-  };
-  
-  
-  const translate = (a,b) => `${a} по-английски: ${b[a]}`;
-  
+  понедельник: "monday",
+  вторник: "tuesday",
+  среда: "wednesday",
+  четверг: "thursday",
+  пятница: "friday",
+  суббота: "saturday",
+  воскресенье: "sunday",
+};
+
+const translate = (a, b) => `${a} по-английски: ${b[a]}`;

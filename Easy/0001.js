@@ -16,4 +16,4 @@ let dollarRate = 63;
 let euroAmount = 500;
 let dollarAmount = 2500;
 
-const rublesAmount = euroAmount*euroRate+dollarAmount*dollarRate;
+const rublesAmount = euroAmount * euroRate + dollarAmount * dollarRate;

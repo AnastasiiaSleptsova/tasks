@@ -17,4 +17,4 @@
 let travelCost = 150000;
 let balance = 100000;
 
-const debtAmount = (travelCost-balance)*2;
+const debtAmount = (travelCost - balance) * 2;

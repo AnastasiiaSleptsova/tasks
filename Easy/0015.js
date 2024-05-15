@@ -17,5 +17,5 @@
 */
 
 let calculatePressure = (liquidDensity, depth) => {
-    return Math.round(liquidDensity * 9.8 * depth)
-    }
+  return Math.round(liquidDensity * 9.8 * depth);
+};
