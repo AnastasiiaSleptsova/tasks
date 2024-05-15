@@ -23,6 +23,4 @@ const calculateExpenses = (netSalary) => {
   return Math.round(dirtySalary * (contributions / 100 + 1));
 };
 
-const add = (num1, num2) => num1 + num2;
-
 module.exports = { calculateExpenses, add, incomeTax, contributions };

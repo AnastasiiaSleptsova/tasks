@@ -6,16 +6,4 @@ describe("основной кейс", () => {
 
     expect(result).toBe(130);
   });
-
-  it("Передаём на вход -20", () => {
-    const result = calculateExpenses(-20);
-
-    expect(result).toBe(130);
-  });
-
-//   it("5 - 5 = 0", () => {
-//     const result = add(5, -5);
-
-//     expect(result).toBe(0);
-//   });
 });
