@@ -9,3 +9,18 @@
 Годы в массиве должны быть числами и располагаться по возрастанию, от меньшего к большему.
 
 */
+
+let getYears = function (yearStart, yearFinal, numberSun) {
+  let olympYears = [];
+  for (let i = yearStart; i <= yearFinal; i++) {
+    let yearsArray = i + [];
+    let sum = 0;
+    for (let j = 0; j < yearsArray.length; j++) {
+      sum += +yearsArray[j];
+    }
+    if (sum === numberSun) {
+      olympYears.push(i);
+    }
+  }
+  return olympYears;
+};

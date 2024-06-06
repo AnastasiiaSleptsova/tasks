@@ -13,6 +13,6 @@
 let fibonacciNumbers = [1, 1];
 let numbersQuantity = 7;
 
-for (i = 0; i < numbersQuantity; i++) {
+for (let i = 0; i < numbersQuantity; i++) {
   fibonacciNumbers.push(fibonacciNumbers[i] + fibonacciNumbers[i + 1]);
 }

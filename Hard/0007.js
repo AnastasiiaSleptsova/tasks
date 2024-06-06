@@ -25,7 +25,7 @@ let usersData = [
 let query = "Александрович";
 let matchingUsers = 0;
 
-for (i = 0; i < usersData.length; i++) {
+for (let i = 0; i < usersData.length; i++) {
   if (usersData[i].indexOf(query) !== -1) {
     matchingUsers++;
   }
