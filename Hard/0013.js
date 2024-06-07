@@ -10,15 +10,21 @@
 
 */
 
+let calculateSumYear = (year) => {
+  let sum = 0,
+    x = String(year);
+  for (let i = 0; i < x.length; i++) {
+    sum += Number(x[i]);
+  }
+  return sum;
+};
+
+console.log(calculateSumYear(2009));
+
 let getYears = function (yearStart, yearFinal, numberSun) {
   let olympYears = [];
   for (let i = yearStart; i <= yearFinal; i++) {
-    let yearsArray = i + [];
-    let sum = 0;
-    for (let j = 0; j < yearsArray.length; j++) {
-      sum += +yearsArray[j];
-    }
-    if (sum === numberSun) {
+    if (calculateSumYear(i) === numberSun) {
       olympYears.push(i);
     }
   }
