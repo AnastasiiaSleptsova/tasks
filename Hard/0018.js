@@ -8,6 +8,23 @@
 
 */
 
-const getSortedArray = (arr, nameKey) => arr.sort((a, b) => {
-    return a[nameKey] - b[nameKey];
-  });
+// Решение с помощью метода sort
+
+// const getSortedArray = (arr, nameKey) => arr.sort((a, b) => {
+//     return a[nameKey] - b[nameKey];
+//   });
+
+// Решение с помощью цикла
+
+const getSortedArray = (arr, nameKey) => {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i][nameKey] > arr[j][nameKey]) {
+        let swap = arr[i];
+        arr[i] = arr[j];
+        arr[j] = swap;
+      }
+    }
+  }
+  return arr;
+};
