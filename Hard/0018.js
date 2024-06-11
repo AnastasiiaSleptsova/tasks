@@ -7,3 +7,7 @@
 Значения в массиве должны увеличиваться от меньшего к большему.
 
 */
+
+const getSortedArray = (arr, nameKey) => arr.sort((a, b) => {
+    return a[nameKey] - b[nameKey];
+  });

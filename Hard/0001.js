@@ -13,5 +13,5 @@
 let firstLeg = 300;
 let secondLeg = 700;
 
-let hypotenuse = Math.round(Math.sqrt(firstLeg ** 2 + secondLeg ** 2));
-let perimeter = firstLeg + secondLeg + hypotenuse;
+const hypotenuse = Math.round(Math.sqrt(firstLeg ** 2 + secondLeg ** 2));
+const perimeter = firstLeg + secondLeg + hypotenuse;

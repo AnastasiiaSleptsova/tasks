@@ -14,7 +14,7 @@ let poly = 1591;
 let ylop = 0;
 let isPalindrome = false;
 
-let str = poly.toString().split("").reverse().join("");
+const str = poly.toString().split("").reverse().join("");
 ylop = parseInt(str);
 
 if (ylop === poly) {

@@ -21,10 +21,10 @@ let length = 60;
 let age = 5;
 let activityRate = 1.725;
 
-let metabolicRate = 88.362 + 13.397 * weight + 4.799 * length - 5.677 * age;
+const metabolicRate = 88.362 + 13.397 * weight + 4.799 * length - 5.677 * age;
 
-let calorieRate = Math.round(metabolicRate * activityRate);
+const calorieRate = Math.round(metabolicRate * activityRate);
 
-let proteins = Math.round(calorieRate * 0.4);
-let fats = Math.round(calorieRate * 0.25);
-let carbohydrates = Math.round(calorieRate * 0.35);
+const proteins = Math.round(calorieRate * 0.4);
+const fats = Math.round(calorieRate * 0.25);
+const carbohydrates = Math.round(calorieRate * 0.35);

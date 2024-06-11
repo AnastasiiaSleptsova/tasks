@@ -8,7 +8,7 @@
 
 */
 
-let getZippedArrays = (arrKeys, arrValues) => {
+const getZippedArrays = (arrKeys, arrValues) => {
   let obj = {};
   for (i = 0; i < arrKeys.length; i++) {
     obj[arrKeys[i]] = arrValues[i];

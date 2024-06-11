@@ -34,8 +34,8 @@
 
 // решение с помощью reduce
 
-// const getRepeats = (arr) =>
-//   arr.reduce((acc, item) => {
-//     acc[item] = acc[item] ? acc[item] + 1 : 1;
-//     return acc;
-//   }, {});
+const getRepeats = (arr) =>
+  arr.reduce((acc, item) => {
+    acc[item] = acc[item] ? acc[item] + 1 : 1;
+    return acc;
+  }, {});

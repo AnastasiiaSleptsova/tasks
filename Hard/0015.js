@@ -12,16 +12,16 @@
 
 */
 
-let calculateRoots = (a, b, c) => {
-  let discriminant = b * b - 4 * a * c;
+const calculateRoots = (a, b, c) => {
+  const discriminant = b * b - 4 * a * c;
   if (discriminant < 0) {
     return "Корней нет";
   } else if (discriminant === 0) {
-    let Sqrt = -b / (2 * a);
+    const Sqrt = -b / (2 * a);
     return "Корень равен " + Sqrt;
   } else {
-    let firstSqrt = (-b + Math.sqrt(discriminant)) / (2 * a);
-    let secondSqrt = (-b - Math.sqrt(discriminant)) / (2 * a);
+    const firstSqrt = (-b + Math.sqrt(discriminant)) / (2 * a);
+    const secondSqrt = (-b - Math.sqrt(discriminant)) / (2 * a);
     return (
       "Первый корень равен " + firstSqrt + ", второй корень равен " + secondSqrt
     );

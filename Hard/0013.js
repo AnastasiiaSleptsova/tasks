@@ -10,7 +10,7 @@
 
 */
 
-let calculateSumYear = (year) => {
+const calculateSumYear = (year) => {
   let sum = 0,
     x = String(year);
   for (let i = 0; i < x.length; i++) {
@@ -19,9 +19,7 @@ let calculateSumYear = (year) => {
   return sum;
 };
 
-console.log(calculateSumYear(2009));
-
-let getYears = function (yearStart, yearFinal, numberSun) {
+const getYears = function (yearStart, yearFinal, numberSun) {
   let olympYears = [];
   for (let i = yearStart; i <= yearFinal; i++) {
     if (calculateSumYear(i) === numberSun) {

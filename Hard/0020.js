@@ -4,7 +4,7 @@ read() (читать) запрашивает два значения и сохр
 sum() (суммировать) возвращает сумму сохранённых значений.
 */
 
-let calculator = {
+const calculator = {
   sum() {
     return this.a + this.b;
   },

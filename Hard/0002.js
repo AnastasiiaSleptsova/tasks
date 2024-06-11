@@ -14,7 +14,7 @@ let age = 5;
 let pulseAtRest = 90;
 let intensity = 75;
 
-let maxPuls = 220 - age;
-let pulseAtWorkout = Math.round(
+const maxPuls = 220 - age;
+const pulseAtWorkout = Math.round(
   ((maxPuls - pulseAtRest) * intensity) / 100 + pulseAtRest
 );

@@ -13,8 +13,8 @@ let quantity = 0;
 
 // решение с помощью методов
 
-// let string = number.toString();
-// let array = string.split('');
+// const string = number.toString();
+// const array = string.split('');
 // quantity = array.length;
 
 // решение с помощью цикла

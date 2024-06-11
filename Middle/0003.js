@@ -21,5 +21,5 @@ let length = 0.55;
 let weight = 5;
 let fatMass = 0.8;
 
-let bodyMassIndex = Math.round(weight / length ** 2);
-let fatPercent = Math.round((fatMass / weight) * 100);
+const bodyMassIndex = Math.round(weight / length ** 2);
+const fatPercent = Math.round((fatMass / weight) * 100);
