@@ -17,7 +17,7 @@
 // Решение с помощью цикла
 
 const getSortedArray = (arr, nameKey) => {
-  for (let i = 0; i < arr.length - 1; i++) {
+  for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i][nameKey] > arr[j][nameKey]) {
         let swap = arr[i];

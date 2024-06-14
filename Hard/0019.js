@@ -11,3 +11,51 @@
 Если значений не хватает, то создавать пустой ключ не надо. А если значений больше, то их не нужно включать в объект — для них нет ключей.
 
 */
+
+let arr1 = ["имя", "любимый цвет", "любимое блюдо"];
+
+let arr2 = [
+  ["Василий", "красный", "борщ"],
+  ["Мария"],
+  ["Иннокентий", "жёлтый", "пельмени", "18", "Азовское"],
+];
+// решение c помощью цикла
+
+// const getData = (arrKeys, arrValue) => {
+//   const result = [];
+
+//   for (let i = 0; i < arrValue.length; i++) {
+//     let newObject = {};
+
+//     for (let j = 0; j < arrValue[i].length; j++) {
+//       const key = arrKeys[j];
+//       if (key) {
+//         newObject[key] = arrValue[i][j];
+//       }
+//     }
+//     result.push(newObject);
+//   }
+
+//   return result;
+// };
+
+
+// решение c помощью метода reduce
+
+const getData = (keys, values) => {
+  return values.reduce((acc, item) => {
+    const newObj = item.reduce((acc, item, idx) => {
+      const key = keys[idx];
+
+      if (key) {
+        acc[key] = item;
+
+        return { ...acc };
+      }
+
+      return acc;
+    }, {});
+
+    return (acc = [...acc, newObj]);
+  }, []);
+};
