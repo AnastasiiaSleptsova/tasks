@@ -26,7 +26,7 @@
 
 // Вариант основной
 
-let calculate = function (firstNumber, secondNumber, operator) {
+const calculate = function (firstNumber, secondNumber, operator) {
   if (operator === "+") {
     return parseInt(firstNumber, 10) + parseInt(secondNumber, 10);
   }

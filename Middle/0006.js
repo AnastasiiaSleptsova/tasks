@@ -16,7 +16,7 @@ let number = 7;
 
 // решение с помощью методов
 
-// let lastIndex = numbers.lastIndexOf(number);
+// const lastIndex = numbers.lastIndexOf(number);
 
 // решение с помощью цикла
 
